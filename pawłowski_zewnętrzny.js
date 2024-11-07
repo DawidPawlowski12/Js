@@ -1,2 +1,2 @@
-document.write("ostatnia modyfikacja strony".fontcolor("yellow").fontsize(7)+"<br>");
+document.write("ostatnia modyfikacja strony".fontcolor("red").fontsize(6)+"<br>");
 document.write(document.lastModified.strike());
