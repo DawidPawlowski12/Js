@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 <head>
-    <meta charset="UTF-8">
-    <title>Kod źródłowy</title>
+    <meta charset="UTF-8"> 
+    <title>zad40 kod</title>
 </head>
-<body>
-    <pre>
-       <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Zadanie 40</title>
-</head>
-<body>
-    <h2>Zadanie 40: Operacje matematyczne</h2>
-    <input type="button" name="zadanie40" value="Oblicz różnicę" onclick="roznica_paw()" />
-    <input type="button" name="zadanie40" value="Oblicz iloczyn" onclick="iloczyn_paw()" />
+<body><h1>HTML</h1>
+<textarea name="zad40" id="1" cols="80" rows="80">
+    <<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie 40</title>
+    </head>
+    <body>
+        <h2>Zadanie 40: Operacje matematyczne</h2>
+        <input type="button" name="zadanie40" value="Oblicz różnicę" onclick="roznica_paw()" />
+        <input type="button" name="zadanie40" value="Oblicz iloczyn" onclick="iloczyn_paw()" />
+        
+        <script>
+            function roznica_paw() {
+                var a_paw = parseFloat(prompt("Podaj pierwszą liczbę:", ""));
+                var b_paw = parseFloat(prompt("Podaj drugą liczbę:", ""));
+                var wynik = a_paw - b_paw;
+                document.write('<p style="color: green; font-size: 4;">Różnica wynosi: ' + wynik + '</p>');
+            }
     
-    <script>
-        function roznica_paw() {
-            var a_paw = parseFloat(prompt("Podaj pierwszą liczbę:", ""));
-            var b_paw = parseFloat(prompt("Podaj drugą liczbę:", ""));
-            var wynik = a_paw - b_paw;
-            document.write('<p style="color: green; font-size: 4;">Różnica wynosi: ' + wynik + '</p>');
-        }
+            function iloczyn_paw() {
+                var a_paw = parseFloat(prompt("Podaj pierwszą liczbę:", ""));
+                var b_paw = parseFloat(prompt("Podaj drugą liczbę:", ""));
+                var wynik = a_paw * b_paw;
+                document.write('<p style="color: blue; font-size: 4;">Iloczyn wynosi: ' + wynik + '</p>');
+            }
+        </script>
+    </body>
+    </html>
+</textarea>
+</body>
+</html>
 
-        function iloczyn_paw() {
-            var a_paw = parseFloat(prompt("Podaj pierwszą liczbę:", ""));
-            var b_paw = parseFloat(prompt("Podaj drugą liczbę:", ""));
-            var wynik = a_paw * b_paw;
-            document.write('<p style="color: blue; font-size: 4;">Iloczyn wynosi: ' + wynik + '</p>');
-        }
-    </script>
-</body>
-</html>
-    </pre>
-</body>
-</html>
