@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad48 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad48" id="1" cols="80" rows="80">
+   <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 48</title>
+</head>
+<body>
+    <h1>Suma szeregu harmonicznego</h1>
+    <p id="result"></p>
+    <script>
+        let suma_paw = 0;
+        for (let iloczyn_paw = 1; iloczyn_paw <= 1000000; iloczyn_paw++) {
+            suma_paw += 1 / iloczyn_paw;
+        }
+        document.getElementById('result').textContent = `Suma szeregu harmonicznego: ${suma_paw}`;
+    </script>
+  </body>
+  </html>
+</textarea>
+</body>
+</html>
