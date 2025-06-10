@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"> 
+    <title>zad49 kod</title>
+</head>
+<body><h1>HTML</h1>
+<textarea name="zad49" id="1" cols="80" rows="80">
+   <html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pawłowski - Zadanie 49</title>
+</head>
+<body>
+    <h1>Obliczanie silni</h1>
+    <label for="n_paw">Podaj n:</label>
+    <input type="number" id="n_paw" min="0">
+    <button onclick="obliczSilnia()">Oblicz</button>
+    <p id="result"></p>
+    <script>
+        function obliczSilnia() {
+            const n_paw = parseInt(document.getElementById('n_paw').value);
+            if (isNaN(n_paw) || n_paw < 0) {
+                alert('Podaj poprawną liczbę!');
+                return;
+            }
+            let silnia_paw = 1;
+            for (let i = 1; i <= n_paw; i++) {
+                silnia_paw *= i;
+            }
+            document.getElementById('result').textContent = `${n_paw}! = ${silnia_paw}`;
+        }
+    </script>
+  </body>
+  </html>
+</textarea>
+</body>
+</html>
