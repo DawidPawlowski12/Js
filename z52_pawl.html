@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Rysowanie prostokąta - Pawłowski</title>
+  <style>
+    pre {
+      font-family: monospace;
+      font-size: 16px;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div style="font-size:2cm; color:red;">
+  Pawłowski
+</div>
+<div style="font-size:5mm; color:blue;">
+  Temat: Użycie pętli for do rysowania prostokąta z gwiazdek
+</div>
+
+<pre>
+<script>
+ 
+  let a_paw = (7 % 4) + 5; 
+  let b_paw = (5 % 6) + 20; 
+
+  
+  for (let i_paw = 1; i_paw <= b_paw; i_paw++) {
+    document.write("*");
+  }
+  document.write("<br>");
+
+
+  for (let j_paw = 1; j_paw <= a_paw - 2; j_paw++) {
+    document.write("*");
+    for (let k_paw = 1; k_paw <= b_paw - 2; k_paw++) {
+      document.write(" ");
+    }
+    document.write("*<br>");
+  }
+
+
+  for (let i_paw = 1; i_paw <= b_paw; i_paw++) {
+    document.write("*");
+  }
+</script>
+</pre>
+</body>
+</html>
