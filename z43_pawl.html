@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wyświetlanie liczb parzystych</title>
+</head>
+<body>
+  <div style="color:red; font-size:50px;">
+    <script>
+      let koniec_petli_paw = prompt("Podaj liczbę, do której chcesz wyświetlić liczby parzyste:");
+
+      koniec_petli_paw = parseInt(koniec_petli_paw);
+
+      for (let i_paw = 1; i_paw <= koniec_petli_paw; i_paw++) {
+        if (i_paw % 2 === 0) {
+          document.write("Liczba parzysta: " + i_paw + "razy ==> Pawłowski<br>");
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>
